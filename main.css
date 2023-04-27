@@ -1,0 +1,48 @@
+@charset "utf-8";
+body{
+    margin: 0px;
+    background-image: url(Purple\ Gradient\ Background.jpg);
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+div{
+    height: 50px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: aliceblue;
+    position: fixed;
+    top: 0;
+    display: block;
+    text-align: center;
+    opacity: 0.5;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 200%;
+
+
+
+}
+a.dashboard{
+    text-decoration: none;
+    position: absolute;
+    left: 0;
+    margin-left: 20px;
+}
+
+@keyframes dashboardHover {
+    0%   {color: #421e9c;}
+    25%  {color: #af3fa1;}
+    50%  {color: azure}
+    100% {color: #421e9c;}
+}
+a.dashboard:hover{
+    text-decoration: none;
+    position: absolute;
+    left: 0;
+    margin-left: 20px;
+    animation-name: dashboardHover;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
