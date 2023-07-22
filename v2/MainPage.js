@@ -23,7 +23,16 @@ function checkPassword() {
     setTimeout(() => {
       window.location.href = 'Abby/AbbyMemory.html'; // Replace 'new_page.html' with your desired page URL
     }, 1000); // Wait for 1 second (adjust the time as needed based on your animation duration)
-  } else {
+  } else if (enteredPassword === correctPassword[1]) {
+    // Fade out animation for current content
+    container.classList.add('fade-out');
+
+    // After the animation, load the new page
+    setTimeout(() => {
+      window.location.href = 'admin/adminMemory.html'; // Replace 'new_page.html' with your desired page URL
+    }, 1000); // Wait for 1 second (adjust the time as needed based on your animation duration)
+  } 
+   else {
     displayNotification('Incorrect password. Please try again.');
   }
 }
