@@ -2,7 +2,7 @@ const backgroundMusic = document.getElementById('backgroundMusic');
 const musicIcon = document.querySelector('.music-icon');
 const timerElement = document.querySelector('.timer');
 const startTime = new Date('2021-03-06T00:00:00'); // Replace this with your desired start date
-let isMusicPlaying = false;
+let isMusicPlaying = true;
 
 function playMusic() {
   backgroundMusic.play();
