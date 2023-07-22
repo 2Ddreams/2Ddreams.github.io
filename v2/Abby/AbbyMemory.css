@@ -62,7 +62,7 @@ p {
     top: 70px;
     right: 35px;
     opacity: 0;
-    animation: fadeInOut 2s ease 30s forwards;
+    animation: fadeInOut 2s ease 1s forwards;
   }
   
   .arrow {
