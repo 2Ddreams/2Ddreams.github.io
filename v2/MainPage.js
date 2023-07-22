@@ -15,7 +15,7 @@ function checkPassword() {
   const enteredPassword = passwordInput.value;
   const correctPassword = ['7604', 'admin'];
 
-  if (correctPassword.includes(enteredPassword)) {
+  if (enteredPassword === correctPassword[0]) {
     // Fade out animation for current content
     container.classList.add('fade-out');
 
