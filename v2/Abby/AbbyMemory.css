@@ -15,6 +15,10 @@ body {
 p {
   opacity: 0;
 }
+
+.card-text {
+  font-weight: normal;
+}
 .container {
   text-align: center;
 }
