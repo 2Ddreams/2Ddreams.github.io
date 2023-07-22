@@ -1,0 +1,142 @@
+body {
+    margin: auto;
+    padding: auto;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 75%;
+    font-family: "Segoe UI", Arial, sans-serif; /* Segoe UI as the primary font */
+    font-weight: bold; /* Making the font bold */
+    overflow: hidden;
+    word-wrap: break-word;
+  }
+p {
+    opacity: 0;
+}
+  .container {
+    text-align: center;
+  }
+  
+  .continue-button {
+    opacity: 0;
+    position: fixed;
+    top: 80%; /* Adjust this value to control the vertical position */
+    background-color: #fff0d6;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #333333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: "Segoe UI", Arial, sans-serif; /* Segoe UI for the button */
+    font-weight: bold;
+    transition: all 0.5s ease;
+    animation: fadeIn 3s ease 30s forwards;
+    border-width: 0;
+  }
+  
+  
+  .continue-button:hover {
+    background-color: #FFB383;
+    transform: translateY(-3px);
+  }
+  
+  /* Music icon styling */
+  .music-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  
+  .music-icon img {
+    width: 30px;
+  }
+  
+/* Existing CSS styles */
+
+/* Add the following CSS for the arrow animation */
+.arrow-animation {
+    position: fixed;
+    top: 70px;
+    right: 35px;
+    opacity: 0;
+    animation: fadeInOut 2s ease 30s forwards;
+  }
+  
+  .arrow {
+    width: 1px;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 30px solid black;
+    position: absolute;
+    right: -15px;
+    border-radius: 15px; /* Adjust this value to position the arrow relative to the music button */
+  }
+  
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+      transform: translateY(-3px);
+    }
+    25%{
+        transform: translateY(5px);
+    }
+    50%{
+        transform: translateY(-8px);
+        opacity: 1;
+
+    }
+    75%{
+        transform: translateY(5px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-3px);
+    }
+  }
+
+
+  .reciever-name {
+    animation: fadeIn 1.5s ease 2s forwards;
+  }
+
+
+  .card-text {
+    animation: fadeIn 2s ease 3s forwards;
+  }
+  .sender-name {
+    margin-left: 80%;
+    animation: fadeIn 1s ease 3.5s forwards;
+
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.timer {
+    opacity: 0;
+    position: fixed;
+    top: 20px; /* Adjust this value to control the vertical position */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFF0D6;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #333333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 3s ease 15s forwards;
+  }
+  
+.ps {
+    animation: fadeIn 1s ease 25s forwards;
+}
