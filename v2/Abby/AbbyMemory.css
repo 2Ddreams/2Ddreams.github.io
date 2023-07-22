@@ -81,13 +81,12 @@ p {
       opacity: 0;
       transform: translateY(-3px);
     }
-    25%{
+    30%{
         transform: translateY(5px);
+        opacity: 1;
     }
     50%{
         transform: translateY(-8px);
-        opacity: 1;
-
     }
     75%{
         transform: translateY(5px);
