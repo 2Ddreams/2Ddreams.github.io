@@ -8,7 +8,7 @@ body {
   height: 100vh;
   width: 75%;
   font-family: "Segoe UI", Arial, sans-serif; /* Segoe UI as the primary font */
-  font-weight: bold; /* Making the font bold */
+  font-style: italic; /* Making the font bold */
   overflow: hidden;
   word-wrap: break-word;
 }
