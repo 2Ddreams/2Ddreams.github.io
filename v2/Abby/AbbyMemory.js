@@ -3,6 +3,7 @@ const musicIcon = document.querySelector('.music-icon');
 const timerElement = document.querySelector('.timer');
 const startTime = new Date('2021-03-06T00:00:00'); // Replace this with your desired start date
 let isMusicPlaying = true;
+let isMenuOpen = false;
 
 function playMusic() {
   backgroundMusic.play();
@@ -52,4 +53,33 @@ setInterval(updateTimer, 1000);
 function contiButton(){
     window.location.href = 'https://open.spotify.com/'; // Replace 'new_page.html' with your desired page URL
 
+}
+
+  /* Open the sidenav */
+function openNav() {
+  isMenuOpen = true;
+  document.getElementById("sideNav").style.width = "100%";
+  document.getElementById("bar1").style.backgroundColor = "#818181";
+  document.getElementById("bar2").style.backgroundColor = "#818181";
+  document.getElementById("bar3").style.backgroundColor = "#818181";
+}
+
+/* Close/hide the sidenav */
+function closeNav() {
+  isMenuOpen = false;
+  document.getElementById("sideNav").style.width = "0";
+  document.getElementById("bar1").style.backgroundColor = "#333";
+  document.getElementById("bar2").style.backgroundColor = "#333";
+  document.getElementById("bar3").style.backgroundColor = "#333";
+  
+}
+
+function menuToggle(x) {
+  x.classList.toggle("change");
+
+  if (isMenuOpen) {
+    closeNav(); 
+  } else {
+    openNav();
+  }
 }

@@ -8,7 +8,18 @@
   <title>Password Input Page</title>
   <link rel="stylesheet" href="AbbyMemory.css">
 </head>
-<body>
+<body id="main">
+    <div id="sideNav" class="sideNavCss">
+        <a href="#">Coming Soon...</a>
+        <a href="#">Coming Soon...</a>
+        <a href="#">Coming Soon...</a>
+        <a href="#">Coming Soon...</a>
+    </div>
+    <div id="barMenu" class="container-menu" onclick="menuToggle(this)">
+        <div id="bar1" class="bar1"></div>
+        <div id="bar2" class="bar2"></div>
+        <div id="bar3" class="bar3"></div>
+    </div>
   <audio id="backgroundMusic" autoplay loop>
     <source src="../background_music.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
@@ -22,12 +33,13 @@
         <div class="arrow">
         </div>
     </div>
+
     <div class="text-content">
         <p class="reciever-name">
             <em>Abby</em>: 
         </p>
         <p class="card-text">
-            First of all I have never written a birthday card before. Soo don't expect the higest quality, but what I can assure is that at least my card will be cooler than yours😉. I think your card covers what I want to say as well. I am so grateful to have a friend like you. Since we first met you've been one of my closest friends. I had experinced many things with you that I would have never thought about happening. From the first time you were drunk🙏 to all the differnt times where we played games or watched movies together. It was happy memories that I would have never otherwise done with anyone else. You often call me the "wise grandpa"?😭. I think I'll be one today. Through out the years I've seen you grow and change (i guess). All of everything that we did is definitely going to be remembered. And this is a prove of that.I am also glad that I can be someone's role model. Someone who is looked upon by others. I think that you inspire me too. Your independence and self-discipline, is something that I wish for, and through the last bit of high school we can do it together like you said. Thats enough reading for one day, and I AM sure that this friendship will last a lifetime.
+            First of all I have never written a birthday card before. Soo don't expect the higest quality, but what I can assure is that at least my card will be prettier than yours😉. I think your card covers what I want to say as well. I am so grateful to have a friend like you. Since we first met you've been one of my closest friends. I had experinced many things with you that I would have never thought about happening. From the first time you were drunk🙏 to all the differnt times where we played games or watched movies together. It was happy memories that I would have never otherwise done with anyone else. You often call me the "wise grandpa"?😭. I think I'll be one today. Through out the years I've seen you grow and change (i guess). All of everything that we did is definitely going to be remembered. And this is a prove of that.I am also glad that I can be someone's role model. Someone who is looked upon by others. I think that you inspire me too. Your independence and self-discipline, is something that I wish for, and through the last bit of high school we can do it together like you said. Thats enough reading for one day, and I AM sure that this friendship will last a lifetime.
         </p>
         <p class="ps">
             (Now go try the gifts)
@@ -35,11 +47,11 @@
         <p class="sender-name">
             From <em>Harry</em>
         </p>
+
     </div> 
       <!-- New timer element -->
   <div class="timer"></div> 
-  <button class="continue-button" onclick="contiButton()">CONTINUE</button>
-
+  <button class="continue-button" onclick="contiButton()">CONTINUE</button>  
   <script src="AbbyMemory.js"></script>
 </body>
 </html>
