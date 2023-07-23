@@ -13,28 +13,29 @@ passwordInput.addEventListener('keypress', function (event) {
 
 function checkPassword() {
   const enteredPassword = passwordInput.value;
-  const correctPassword = ['7604', 'admin'];
+  const correctPassword = ['7604', 'admin', 'form'];
+
 
   if (enteredPassword === correctPassword[0]) {
-    // Fade out animation for current content
-    container.classList.add('fade-out');
-
-    // After the animation, load the new page
-    setTimeout(() => {
-      window.location.href = 'Abby/AbbyMemory.html'; // Replace 'new_page.html' with your desired page URL
-    }, 1000); // Wait for 1 second (adjust the time as needed based on your animation duration)
+      WaitForAnim('Abby/AbbyMemory.html');
   } else if (enteredPassword === correctPassword[1]) {
-    // Fade out animation for current content
-    container.classList.add('fade-out');
-
-    // After the animation, load the new page
-    setTimeout(() => {
-      window.location.href = 'admin/adminMemory.html'; // Replace 'new_page.html' with your desired page URL
-    }, 1000); // Wait for 1 second (adjust the time as needed based on your animation duration)
-  } 
+      WaitForAnim('admin/adminMemory.html');
+  }  else if (enteredPassword === correctPassword[2]) {
+      WaitForAnim('form/adminMemory.html');
+} 
    else {
     displayNotification('Incorrect password. Please try again.');
   }
+}
+
+function WaitForAnim(hrefLocation){
+      // Fade out animation for current content
+      container.classList.add('fade-out');
+
+      // After the animation, load the new page
+      setTimeout(() => {
+        window.location.href = hrefLocation; // Replace 'new_page.html' with your desired page URL
+      }, 1000); // Wait for 1 second (adjust the time as needed based on your animation duration)
 }
 
 function displayNotification(message) {
