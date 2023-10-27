@@ -21,7 +21,7 @@ function checkPassword() {
   } else if (enteredPassword === correctPassword[1]) {
       WaitForAnim('admin/adminMemory.html');
   }  else if (enteredPassword === correctPassword[2]) {
-      WaitForAnim('form/adminMemory.html');
+      WaitForAnim('form/contact.html');
 } 
    else {
     displayNotification('Incorrect password. Please try again.');
