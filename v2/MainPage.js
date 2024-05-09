@@ -23,7 +23,7 @@ function checkPassword() {
   }  else if (enteredPassword === correctPassword[2]) {
       WaitForAnim('form/contact.html'); 
   }  else if (enteredPassword === correctPassword[3]) {
-    WaitForAnim('Birthday/Mum.html');
+    WaitForAnim('Birthday/MumBD.html');
   } 
    else {
     displayNotification('Incorrect password. Please try again.');
