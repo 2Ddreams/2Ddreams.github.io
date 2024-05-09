@@ -44,7 +44,7 @@ function updateTimer() {
   const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
-  timerElement.textContent = `Time Passed: ${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
+  timerElement.textContent = `出生第: ${days} 天, ${hours} 小时, ${minutes} 分钟, ${seconds} 秒`;
 }
 
 // Call the updateTimer function every second
