@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nostalgia - Abby</title>
+  <link rel="icon" type="image/x-icon" href="../Nostalgia Logo.png">
+  <meta http-equiv='cache-control' content='no-cache'> 
+  <meta http-equiv='expires' content='0'> 
+  <meta http-equiv='pragma' content='no-cache'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Input Page</title>
+  <link rel="stylesheet" href="MumBD.css">
+</head>
+<body id="main">
+    <div id="sideNav" class="sideNavCss">
+        <a href="#">BTS Video (Coming Soon)</a>
+        <a href="#">Gallery (Coming Soon)</a>
+        <a href="#">Coming Soon...</a>
+    </div>
+    <div id="barMenu" class="container-menu" onclick="menuToggle(this)">
+        <div id="bar1" class="bar1"></div>
+        <div id="bar2" class="bar2"></div>
+        <div id="bar3" class="bar3"></div>
+    </div>
+  <audio id="backgroundMusic" autoplay loop>
+    <source src="../background_music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <div class="music-icon" onclick="toggleMusic()">
+    <img src="../music_icon_play.png" alt="Music Icon">
+  </div>
+  <div class="notification"></div> <!-- Notification div -->
+<!-- New arrow element -->
+    <div class="arrow-animation">
+        <div class="arrow">
+        </div>
+    </div>
+
+    <div class="text-content">
+        <p class="reciever-name">
+            <em>Abby</em>: 
+        </p>
+        <p class="card-text">
+          MUM BD TEST
+        </p>
+        <p class="ps">
+            (Now go try the gifts)
+        </p>
+        <p class="sender-name">
+            From <em>Harry</em>
+        </p>
+
+    </div> 
+      <!-- New timer element -->
+  <div class="timer"></div> 
+  <button class="continue-button" onclick="contiButton()">CONTINUE</button>  
+  <script src="MumBD.js"></script>
+</body>
+</html>
+
