@@ -13,7 +13,7 @@ passwordInput.addEventListener('keypress', function (event) {
 
 function checkPassword() {
   const enteredPassword = passwordInput.value;
-  const correctPassword = ['7604', 'admin', 'form'];
+  const correctPassword = ['7604', 'admin', 'form', '421979'];
 
 
   if (enteredPassword === correctPassword[0]) {
@@ -21,8 +21,10 @@ function checkPassword() {
   } else if (enteredPassword === correctPassword[1]) {
       WaitForAnim('admin/adminMemory.html');
   }  else if (enteredPassword === correctPassword[2]) {
-      WaitForAnim('form/contact.html');
-} 
+      WaitForAnim('form/contact.html'); 
+  }  else if (enteredPassword === correctPassword[3]) {
+    WaitForAnim('Birthday/Mum.html');
+  } 
    else {
     displayNotification('Incorrect password. Please try again.');
   }
