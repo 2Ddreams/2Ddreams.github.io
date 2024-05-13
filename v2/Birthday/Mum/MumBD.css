@@ -38,7 +38,7 @@ p {
   font-family: "Segoe UI", Arial, sans-serif; /* Segoe UI for the button */
   font-weight: bold;
   transition: all 0.5s ease;
-  animation: fadeIn 3s ease 30s forwards;
+  animation: fadeIn 3s ease 22s forwards;
   border-width: 0;
 }
 
@@ -139,11 +139,11 @@ p {
   font-size: 18px;
   color: #333333;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  animation: fadeIn 3s ease 15s forwards;
+  animation: fadeIn 3s ease 10s forwards;
 }
 
 .ps {
-  animation: fadeIn 1s ease 25s forwards;
+  animation: fadeIn 1s ease 15s forwards;
 }
 
 
