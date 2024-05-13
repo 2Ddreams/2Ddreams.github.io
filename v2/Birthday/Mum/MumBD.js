@@ -51,7 +51,7 @@ function updateTimer() {
 setInterval(updateTimer, 1000);
 
 function contiButton(){
-    window.location.href = 'https://open.spotify.com/playlist/4rfFqkv8Ug1oEHIvkcvaFy?si=15124590f42b4f07'; // Replace 'new_page.html' with your desired page URL
+    window.location.href = 'https://www.youtube.com/watch?v=gVPc5vp93ow'; // Replace 'new_page.html' with your desired page URL
 }
 
   /* Open the sidenav */

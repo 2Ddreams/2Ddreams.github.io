@@ -15,7 +15,7 @@ body {
 p {
   opacity: 0;
   font-family: "FangSong", sans-serif;
-  font-size: large;
+  font-size: 22px;
 }
 
 .card-text {
