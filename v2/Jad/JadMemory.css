@@ -138,11 +138,11 @@ p {
   font-size: 18px;
   color: #333333;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  animation: fadeIn 3s ease 15s forwards;
+  animation: fadeIn 3s ease 30s forwards;
 }
 
 .ps {
-  animation: fadeIn 1s ease 25s forwards;
+  animation: fadeIn 1s ease 90s forwards;
 }
 
 
