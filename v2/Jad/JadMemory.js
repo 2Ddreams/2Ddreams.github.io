@@ -1,7 +1,7 @@
 const backgroundMusic = document.getElementById('backgroundMusic');
 const musicIcon = document.querySelector('.music-icon');
 const timerElement = document.querySelector('.timer');
-const startTime = new Date('2021-03-06T00:00:00'); // Replace this with your desired start date
+const startTime = new Date('2017-01-01T00:00:00'); // Replace this with your desired start date
 let isMusicPlaying = true;
 let isMenuOpen = false;
 
@@ -50,10 +50,10 @@ function updateTimer() {
 // Call the updateTimer function every second
 setInterval(updateTimer, 1000);
 
-function contiButton(){
-    window.location.href = 'https://open.spotify.com/playlist/4rfFqkv8Ug1oEHIvkcvaFy?si=15124590f42b4f07'; // Replace 'new_page.html' with your desired page URL
+// function contiButton(){
+//     window.location.href = 'https://open.spotify.com/playlist/4rfFqkv8Ug1oEHIvkcvaFy?si=15124590f42b4f07'; // Replace 'new_page.html' with your desired page URL
 
-}
+// }
 
   /* Open the sidenav */
 function openNav() {
